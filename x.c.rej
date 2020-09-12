@@ -1,11 +1,13 @@
---- x.c
-+++ x.c
-@@ -643,7 +643,7 @@ brelease(XEvent *e)
- 		return;
- 	}
+--- x.c	2020-06-19 14:59:45.000000000 +0530
++++ x.c	2020-07-20 03:39:56.260922736 +0530
+@@ -1102,10 +1105,8 @@ void
+ xinit(int cols, int rows)
+ {
+ 	XGCValues gcvalues;
+-	Cursor cursor;
+ 	Window parent;
+ 	pid_t thispid = getpid();
+-	XColor xmousefg, xmousebg;
  
--	if (e->xbutton.button == Button2)
-+	if (e->xbutton.button == Button3)
- 		selpaste(NULL);
- 	else if (e->xbutton.button == Button1)
- 		mousesel(e, 1);
+ 	if (!(xw.dpy = XOpenDisplay(NULL)))
+ 		die("can't open display\n");
