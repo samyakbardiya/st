@@ -98,29 +98,49 @@ float alpha = 0.8, alphaUnfocused = 0.6;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
+  // GRUVBOX_DARK
   /* 8 normal colors */
-  [0] = "#000000", /* black   */
-  [1] = "#ff5555", /* red     */
-  [2] = "#50fa7b", /* green   */
-  [3] = "#f1fa8c", /* yellow  */
-  [4] = "#bd93f9", /* blue    */
-  [5] = "#ff79c6", /* magenta */
-  [6] = "#8be9fd", /* cyan    */
-  [7] = "#bbbbbb", /* white   */
+  [0] = "#1d2021", /* mid contrast: #282828 / soft contrast: #32302f */
+  [1] = "#cc241d", /* red     */
+  [2] = "#98971a", /* green   */
+  [3] = "#d79921", /* yellow  */
+  [4] = "#458588", /* blue    */
+  [5] = "#b16286", /* magenta */
+  [6] = "#689d6a", /* cyan    */
+  [7] = "#a89984", /* white   */
 
   /* 8 bright colors */
-  [8]  = "#44475a", /* black   */
-  [9]  = "#ff5555", /* red     */
-  [10] = "#50fa7b", /* green   */
-  [11] = "#f1fa8c", /* yellow  */
-  [12] = "#bd93f9", /* blue    */
-  [13] = "#ff79c6", /* magenta */
-  [14] = "#8be9fd", /* cyan    */
-  [15] = "#ffffff", /* white   */
+  [8]  = "#928374", /* black   */
+  [9]  = "#fb4934", /* red     */
+  [10] = "#b8bb26", /* green   */
+  [11] = "#fabd2f", /* yellow  */
+  [12] = "#83a598", /* blue    */
+  [13] = "#d3869b", /* magenta */
+  [14] = "#8ec07c", /* cyan    */
+  [15] = "#ebdbb2", /* white   */
 
-  /* special colors */
-  [256] = "#282a36", /* background */
-  [257] = "#f8f8f2", /* foreground */
+  // DRACULA
+  ///* 8 normal colors */
+  //[0] = "#000000", /* black   */
+  //[1] = "#ff5555", /* red     */
+  //[2] = "#50fa7b", /* green   */
+  //[3] = "#f1fa8c", /* yellow  */
+  //[4] = "#bd93f9", /* blue    */
+  //[5] = "#ff79c6", /* magenta */
+  //[6] = "#8be9fd", /* cyan    */
+  //[7] = "#bbbbbb", /* white   */
+  ///* 8 bright colors */
+  //[8]  = "#44475a", /* black   */
+  //[9]  = "#ff5555", /* red     */
+  //[10] = "#50fa7b", /* green   */
+  //[11] = "#f1fa8c", /* yellow  */
+  //[12] = "#bd93f9", /* blue    */
+  //[13] = "#ff79c6", /* magenta */
+  //[14] = "#8be9fd", /* cyan    */
+  //[15] = "#ffffff", /* white   */
+  ///* special colors */
+  //[256] = "#282a36", /* background */
+  //[257] = "#f8f8f2", /* foreground */
 };
 
 
@@ -128,11 +148,19 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor
  */
-unsigned int defaultfg = 257;
-unsigned int defaultbg = 256;
-static unsigned int defaultcs = 257;
-static unsigned int defaultrcs = 256;
-unsigned int bg = 256, bgUnfocused = 256;
+// GRUVBOX_DARK
+unsigned int defaultfg = 15;
+unsigned int defaultbg = 0;
+static unsigned int defaultcs = 15;
+static unsigned int defaultrcs = 0;
+unsigned int bg = 0, bgUnfocused = 0;
+
+// DRACULA
+//unsigned int defaultfg = 257;
+//unsigned int defaultbg = 256;
+//static unsigned int defaultcs = 257;
+//static unsigned int defaultrcs = 256;
+//unsigned int bg = 256, bgUnfocused = 256;
 
 /*
  * Colors used, when the specific fg == defaultfg. So in reverse mode this
