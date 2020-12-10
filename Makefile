@@ -31,8 +31,8 @@ st: $(OBJ)
 
 clean:
 	rm -f st $(OBJ) st-$(VERSION).tar.gz
-	rm config.h
-	trash *.orig *.rej
+	rm config.h &
+	trash *.orig *.rej &
 
 dist: clean
 	mkdir -p st-$(VERSION)
