@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "Fira Code Nerd Font:pixelsize=14:antialias=true:autohint=true";
-static char *font2[] = { "JoyPixels:pixelsize=14:antialias=true:autohint=true" };
+static char *font2[] = { "Twemoji:pixelsize=14:antialias=true:autohint=true" };
 static int borderpx = 2;
 
 /*
@@ -99,26 +99,46 @@ float alpha = 0.8, alphaUnfocused = 0.6;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-  // GRUVBOX_DARK
+   // GRUVBOX_MATERIAL
   /* 8 normal colors */
-  [0] = "#1d2021", /* mid contrast: #282828 / soft contrast: #32302f */
-  [1] = "#cc241d", /* red     */
-  [2] = "#98971a", /* green   */
-  [3] = "#d79921", /* yellow  */
-  [4] = "#458588", /* blue    */
-  [5] = "#b16286", /* magenta */
-  [6] = "#689d6a", /* cyan    */
-  [7] = "#a89984", /* white   */
+  [0] = "#202020", /* black   */
+  [1] = "#EA6962", /* red     */
+  [2] = "#A9B665", /* green   */
+  [3] = "#D8A657", /* yellow  */
+  [4] = "#7DAEA3", /* blue    */
+  [5] = "#D3869B", /* magenta */
+  [6] = "#89B482", /* cyan    */
+  [7] = "#A89984", /* white   */
 
   /* 8 bright colors */
   [8]  = "#928374", /* black   */
-  [9]  = "#fb4934", /* red     */
-  [10] = "#b8bb26", /* green   */
-  [11] = "#fabd2f", /* yellow  */
-  [12] = "#83a598", /* blue    */
-  [13] = "#d3869b", /* magenta */
-  [14] = "#8ec07c", /* cyan    */
-  [15] = "#ebdbb2", /* white   */
+  [9]  = "#B85651", /* red     */
+  [10] = "#8F9A52", /* green   */
+  [11] = "#C18F41", /* yellow  */
+  [12] = "#68948A", /* blue    */
+  [13] = "#AB6C7D", /* magenta */
+  [14] = "#72966C", /* cyan    */
+  [15] = "#D4BE98", /* white   */
+  // // GRUVBOX_DARK
+  ///* 8 normal colors */
+  //[0] = "#1d2021", /* mid contrast: #282828 / soft contrast: #32302f */
+  //[1] = "#cc241d", /* red     */
+  //[2] = "#98971a", /* green   */
+  //[3] = "#d79921", /* yellow  */
+  //[4] = "#458588", /* blue    */
+  //[5] = "#b16286", /* magenta */
+  //[6] = "#689d6a", /* cyan    */
+  //[7] = "#a89984", /* white   */
+
+  ///* 8 bright colors */
+  //[8]  = "#928374", /* black   */
+  //[9]  = "#fb4934", /* red     */
+  //[10] = "#b8bb26", /* green   */
+  //[11] = "#fabd2f", /* yellow  */
+  //[12] = "#83a598", /* blue    */
+  //[13] = "#d3869b", /* magenta */
+  //[14] = "#8ec07c", /* cyan    */
+  //[15] = "#ebdbb2", /* white   */
 };
 
 
